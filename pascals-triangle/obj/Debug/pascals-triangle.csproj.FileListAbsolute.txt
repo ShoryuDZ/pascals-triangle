@@ -1,0 +1,6 @@
+/Users/user/Documents/2019-20/GitHub/pascals-triangle/pascals-triangle/bin/Debug/pascals-triangle.exe
+/Users/user/Documents/2019-20/GitHub/pascals-triangle/pascals-triangle/bin/Debug/pascals-triangle.pdb
+/Users/user/Documents/2019-20/GitHub/pascals-triangle/pascals-triangle/obj/Debug/pascals-triangle.csprojAssemblyReference.cache
+/Users/user/Documents/2019-20/GitHub/pascals-triangle/pascals-triangle/obj/Debug/pascals-triangle.csproj.CoreCompileInputs.cache
+/Users/user/Documents/2019-20/GitHub/pascals-triangle/pascals-triangle/obj/Debug/pascals-triangle.exe
+/Users/user/Documents/2019-20/GitHub/pascals-triangle/pascals-triangle/obj/Debug/pascals-triangle.pdb
