@@ -33,22 +33,31 @@ namespace pascalstriangle
                     List<int> newLine = new List<int>{};
                     for (int lineCounter = 0; newLine.Count <= counter; lineCounter ++)
                     {
-                        newLine.Insert(lineCounter, lineCounter + 1);
+                        if (lineCounter == 0 || lineCounter == counter)
+                        {
+                            newLine.Insert(lineCounter, 1);
+                        }
+                        else
+                        {
+                            int sum = lines[counter - 1][lineCounter - 1] + lines[counter - 1][lineCounter];
+                            newLine.Insert(lineCounter, sum);
+                        }
                     }
                     lines.Insert(counter, newLine);
                 }
 
                 String line = format(lines[counter]);
-                Console.WriteLine(line.ToString().PadLeft(numberOfLines + counter, ' '));
+                Console.WriteLine(line.ToString().PadLeft((numberOfLines - counter + 1) * 3 + line.Length, ' '));
             }
 
             String format(List<int> line)
             {
                 String lineString = "";
 
-                foreach (int value in line)
+                for (int lineCounter = 0; lineCounter < line.Count; lineCounter++)
                 {
-                    lineString += value.ToString() + " ";
+                    int value = line[lineCounter];
+                    lineString += value.ToString().PadLeft(6, ' ');
                 }
 
                 return lineString.Trim();
